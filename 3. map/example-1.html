@@ -8,9 +8,22 @@
 <body>
     <script>
         const sallariesGrn = [12000, 8000, 5600, 25000, 30000];
-        const sallaryDollar = sallariesGrn.map(function(item) {
-            return item/25;
-        });
+        // const sallaryDollar = sallariesGrn.map(function(item) {
+        //     return item/28;
+        // });
+        const sallaryDollar = sallariesGrn.map((item) => item/28);
+        /*
+        const func = function(item) {
+            return item/28;
+        };
+        const sallaryDollar = [];
+        for(let i = 0; i < sallariesGrn.length; i += 1){
+            const elem = sallariesGrn[i];
+            const newElem = func(elem, i, sallariesGrn);
+            sallaryDollar.push(newElem)
+        }
+        delete func;
+        */
         console.log(sallaryDollar);
     </script>
 </body></html>

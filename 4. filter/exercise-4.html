@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const books = [
+      {
+        title: "Дед Снегур и Морозочка",
+        author: "Донцова"
+      },
+      {
+        title: "Детектив на диване",
+        author: "Д. Донцова"
+      },
+      {
+        title: "Детектив на диете",
+        author: "Д. Донцова"
+      },
+      {
+        title: "Тысячекратная мысль",
+        author: "Скотт Бэкер"
+      },
+      {
+        title: "Тьма, что приходит прежде",
+        author: "Скотт Бэкер"
+      },
+      {
+        title: "Нечестивый Консульт",
+        author: "Скотт Бэкер"
+      }
+    ];
+
+      const goodBooks = books.filter(item => !item.author.includes("Донцова"));
+      const badBooks = books.filter(item => item.author.includes("Донцова"));
+      console.log(goodBooks)
+      console.log(badBooks)
+  </script>
+</body>
+</html>

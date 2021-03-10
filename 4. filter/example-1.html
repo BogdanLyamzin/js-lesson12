@@ -5,6 +5,32 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        const numbers = [8, 0, -4, 14, -15];
+
+        // const positiveNumbers = numbers.filter(function(item){
+        //     if(item >= 0) {
+        //         return true;
+        //     }
+        //     return false;
+        // });
+        const positiveNumbers = numbers.filter(item => (item >= 0));
+        /*
+        const func = function(item){
+            return (item >= 0);
+        };
+        const positiveNumbers = [];
+        for(let i = 0; i < numbers.length; i +=1){
+            const elem = numbers[i];
+            const checkResult = func(elem, i, numbers);
+            if(checkResult){
+                positiveNumbers.push(elem);
+            }
+        }
+        delete func;
+        */
+        console.log(positiveNumbers)
+    </script>
 
 </body>
 </html>

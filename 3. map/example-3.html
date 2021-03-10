@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const workers = [
+      {
+        name: "Саша",
+        lastName: "Репета",
+        age: 45,
+        sallary: 4500,
+        status: "СТО"
+      },
+      {
+        name: "Вика",
+        lastName: "Химич",
+        age: 25,
+        sallary: 2300,
+        status: "teacher of magic"
+      },
+      {
+        name: "Леша",
+        lastName: "Рыхальский",
+        age: 45,
+        sallary: 8500,
+        status: "teamlead"
+      },
+    ];
+
+    // const workersShortInfo = workers.map(item => {
+    //   const newObj = {
+    //     name: item.name,
+    //     lastName: item.lastName
+    //   };
+    //   return newObj;
+    // });
+    const workersShortInfo = workers.map(({name, lastName})=> {
+      return {
+        name, lastName
+      }
+    });
+    // const workersShortInfo = workers.map(({name, lastName}) => ({name, lastName}))
+    console.log(workersShortInfo)
+  </script>
+</body>
+</html>

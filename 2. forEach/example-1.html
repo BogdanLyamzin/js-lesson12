@@ -7,13 +7,26 @@
 <body>
     <script>
         
+        const showArr = function(elem, index, arr){
+            console.log(`${elem} - ${index} элемент в массиве ${arr}`)
+        };
+
         const englishBreakfeast = ["яйца", "бекон", "сосиски", "жареные помидоры", "фасоль", "булочка с джемом", "кофе"];
-        englishBreakfeast.forEach(function(food) {
-            console.log(food);
-        });
+        // englishBreakfeast.forEach(showArr)
+        // englishBreakfeast.forEach(function(food) {
+        //     console.log(food);
+        // });
         
-        console.log("");
-        englishBreakfeast.forEach((food) => console.log(food));        
+        // console.log("");
+        englishBreakfeast.forEach((food, index) => console.log(`${food} - ${index} элемент массива`));  
+         /*
+         const func = (food) => console.log(food);
+         for(let i = 0; i < englishBreakfeast.length; i +=1){
+             const elem = englishBreakfeast[i];
+             func(elem, i, englishBreakfeast)
+         }
+         delete func;
+         */      
     </script>
 </body>
 </html>

@@ -5,6 +5,44 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script>
+    const workers = [
+      {
+        name: "Саша",
+        lastName: "Репета",
+        age: 45,
+        sallary: 4500,
+        status: "СТО"
+      },
+      {
+        name: "Вика",
+        lastName: "Химич",
+        age: 25,
+        sallary: 2300,
+        status: "teacher of magic"
+      },
+      {
+        name: "Леша",
+        lastName: "Рыхальский",
+        age: 45,
+        sallary: 8500,
+        status: "teamlead"
+      },
+    ];
+    
+    // let result = true;
+    // workers.forEach(({sallary}) => {
+    //     if(sallary < 1000){
+    //         result = false;
+    //     }
+    // });
+    const result = workers.some(({sallary}) => sallary > 7000);
+    if(result){
+        alert("В вашей фирме есть нормальные зарплаты, удивительно!")
+    }
+    else {
+        alert("Скоро будет бунт")
+    }
+    </script>
 </body>
 </html>

@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        const searchInArr = function(arr, elem){
+            const newArr = [];
+            for(const value of arr){
+                if(value === elem) {
+                    newArr.push(value)
+                }
+            }
+            return newArr;
+        };
 
+        const users = ["Саша", "Репета", " Warrior", "Poly", "Саша"];
+
+        const filterUsers = searchInArr(users, "Саша");
+        console.log(filterUsers)
+    </script>
 </body>
 </html>

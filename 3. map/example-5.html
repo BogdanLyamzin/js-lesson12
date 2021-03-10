@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <script>
+  <script>
     const workers = [
       {
         name: "Саша",
@@ -29,21 +31,12 @@
         status: "teamlead"
       },
     ];
-    
-    // let result = true;
-    // workers.forEach(({sallary}) => {
-    //     if(sallary < 1000){
-    //         result = false;
-    //     }
-    // });
-    const result = workers.every(({sallary}) => sallary > 2500);
-    console.log(result)
-    // if(result){
-    //     alert("Все сотрудники нормально получают")
-    // }
-    // else {
-    //     alert("Скоро будет бунт")
-    // }
-    </script>
+
+    // const newWorkers = [...workers];
+      const newWorkers = workers.map(item => ({...item}));
+   workers[0].sallary = 6000;
+   console.log(workers);
+    console.log(newWorkers);
+  </script>
 </body>
 </html>

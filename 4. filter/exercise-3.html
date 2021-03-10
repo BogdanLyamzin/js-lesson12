@@ -18,6 +18,10 @@
         const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
         const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
 
+        const clients2Unique =clients2.filter(item => !clients1.includes(item));
+        
+        const totalClients = [...clients1, ...clients2Unique];
+        
     </script>
 </body>
 </html>

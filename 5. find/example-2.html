@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const products = [
+      {
+        _id: "43335",
+        name: "Lenovo X120S"
+      },
+      {
+        _id: "56722",
+        name: "iPhone X"
+      }
+    ];
+
+    const findId = prompt("Введите ID искомого товара");
+    const result = products.find(item => item._id === findId);
+    
+    if(result){
+      alert(`Ваш товар - это ${result.name}`)
+    }
+    else {
+      alert("Такого товара нет в базе")
+    }
+  </script>
+</body>
+</html>

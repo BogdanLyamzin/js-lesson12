@@ -16,7 +16,15 @@
         */
 
         const userSallaries = [35000, 40000, 17000, 15000, 21000, 12000];
-
+        const answer = confirm("Вы хотите видеть высокие зарплаты?");
+        if(answer){
+            const hightSallaries = userSallaries.filter(item => item > 20000);
+            console.log(hightSallaries)
+        }
+        else {
+            const lowSallaries = userSallaries.filter(item => item < 20000);
+            console.log(lowSallaries)            
+        }
 
     </script>
 </body>

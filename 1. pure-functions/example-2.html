@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const removeObjProperty = function(obj, removeProperty){
+      // const newObj = {...obj};
+      // const {course: prop, ....newObj} = obj;
+      const {[removeProperty]: prop, ...newObj} = obj;
+      // delete newObj[removeProperty];
+      return newObj;
+    };
+
+    const student = {
+      name: "Саша",
+      lastName: "Репета",
+      course: 4
+    };
+
+    const newStudent = removeObjProperty(student, "course");
+    // const newStudent = {...student};
+    // delete newStudent.course;
+    console.log(student);
+    console.log(newStudent);
+
+  </script>
+</body>
+</html>

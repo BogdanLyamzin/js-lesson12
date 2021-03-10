@@ -5,6 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+     const workers = [
+      {
+        name: "Саша",
+        lastName: "Репета",
+        age: 45,
+        sallary: 4500,
+        status: "СТО"
+      },
+      {
+        name: "Вика",
+        lastName: "Химич",
+        age: 25,
+        sallary: 2300,
+        status: "teacher of magic"
+      },
+      {
+        name: "Леша",
+        lastName: "Рыхальский",
+        age: 45,
+        sallary: 8500,
+        status: "teamlead"
+      },
+    ];
+    
+    const worker = workers.find(item => item.age < 30);
+    /*
+    const func = item => item.age < 30;
+    let result;
+    for(let i = 0; i < workers.length; i += 1){
+        const elem = workers[i];
+        const passed = func(elem, i, workers);
+        if(passed){
+            result = elem;
+            break;
+        }
+    }
+    delete func;
+    const worker = result;
+    */
+    console.log(worker)
+</script>
 </body>
 </html>
